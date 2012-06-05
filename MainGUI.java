@@ -8,9 +8,11 @@ package assignment8;
 import java.awt.*;
 import javax.swing.*;
 
-public class MainGUI {
-	
-	public static void main (String[] argv) {
-		new Frame();
-	}
+public class MainGUI
+{
+
+    public static void main(String[] argv)
+    {
+        new Frame();
+    }
 }
