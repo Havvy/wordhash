@@ -5,22 +5,23 @@ import java.util.Set;
 
 public class MainCLI {
 
-    static public WordHash wordHash;
+    static public WordMap wordHash;
     public static String inputString;
     public static String[] words;
    
     public static void main(String[] args) throws IOException {
-    wordHash = new WordHash(readstr()); 
+    	inputString = readstr();
+    	wordHash = new WordMap(inputString); 
    
-    boolean mainrepeat = true;
-    while (mainrepeat) {
-        System.out.println("*************************************************************************");
-        System.out.println("Hello! Please choose an option (represented by the corresponding number):");
-        System.out.println("(1) Print out the string.");
-        System.out.println("(2) Search for a word in the string");
-        System.out.println("(0) exit the program.");
-        mainrepeat = usrIn();
-        }
+	    boolean mainrepeat = true;
+	    while (mainrepeat) {
+	        System.out.println("*************************************************************************");
+	        System.out.println("Hello! Please choose an option (represented by the corresponding number):");
+	        System.out.println("(1) Print out the string.");
+	        System.out.println("(2) Search for a word in the string");
+	        System.out.println("(0) exit the program.");
+	        mainrepeat = usrIn();
+	    }
     }
 
     static public boolean usrIn() throws IOException{
